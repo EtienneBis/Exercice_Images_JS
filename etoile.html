@@ -5,15 +5,15 @@
 	
 <title>Mon Exercice JS N°2</title>
 <script>
-
-function afficher(){
+<!--
+function afficher1(){
 	
 	var saisie = parseInt(document.getElementById('V1').value);
 	var resultat = "";	
 		
 	for (j=0; j<saisie ; j++){
         	for (i=saisie; i!=0 ; i--){
-                	resultat += " * "; 
+                	resultat += "*"; 
         	}
                 resultat += "</br>";
         }
@@ -22,6 +22,25 @@ function afficher(){
 
 }
 
+-->
+
+function afficher(){
+	
+	var saisie = parseInt(document.getElementById('V1').value);
+	var resultat = "";	
+		
+	for (j=0; j<saisie ; j++){
+        	for (i=0; i<=j0 ; i++){
+                	resultat += "*"; 
+        	}
+                resultat += "</br>";
+        }
+	
+	document.getElementById('result').innerHTML = resultat;
+
+}
+
+	
 </script>
 
 </head>
