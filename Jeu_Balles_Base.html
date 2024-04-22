@@ -28,6 +28,10 @@ function bouger(){
 			if(ballX<=0){ballX=885;}
 			document.getElementById('blueball').setAttribute("cx", ballX);
 }
+			if(ballX <= 0 || ballX >= 900){ // Si la balle atteint le bord gauche ou droit
+        		speed *= -1; // Inverser la direction en changeant la vitesse de déplacement
+}
+ballX += speed;
 
 
 function deplacement(evt) {
