@@ -25,8 +25,8 @@ function bouger(){
 	//Code à créer pour faire bouger la boule enemy
 		 // Gauche 
 			ballX -= 15;
-			if(ballX<15){ballX=15;}
-				ballX -= 15;
+			if(ballX<=0){ballX=885;}
+			document.getElementById('ball').setAttribute("cx", ballX);
 			break;
 }
 
