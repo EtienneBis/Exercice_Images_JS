@@ -2,6 +2,8 @@
 	<meta charset="UTF-8"/>
 <head>
 <script>
+
+	
 function affichage(){
 	alert("Tout es OK !");
 }
@@ -19,10 +21,14 @@ function controler(){
 	else{alert("Bouton option NON coché");}		
 }
 
+	
 function afficher(){
 	document.getElementById('image').style.display="Block";
 }
 
+function cacher(){
+	document.getElementById('image').style.display="None";
+}
 
 </script>
 </head>
@@ -38,9 +44,9 @@ function afficher(){
 
 <button onclick="afficher()">Afficher</button>
 
-<img id="image" src="https://etiennebis.alwaysdata.net/Image1.jpg" />
-<img id="image" src="https://etiennebis.alwaysdata.net/Image2.jpg" />
-<img id="image" src="https://etiennebis.alwaysdata.net/Image3.jpg" />
+<img width="400" height="341" id="image" src="https://etiennebis.alwaysdata.net/Image1.jpg" />
+<img width="400" height="341" id="image" src="https://etiennebis.alwaysdata.net/Image2.jpg" />
+<img width="400" height="341" id="image" src="https://etiennebis.alwaysdata.net/Image3.jpg" />
 
 <!--
 <hr/>
