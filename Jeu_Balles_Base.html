@@ -24,14 +24,9 @@ function bouger(){
 		var ballX = parseInt(document.getElementById('blueball').getAttribute("cx"));
 	//Code à créer pour faire bouger la boule enemy
 		 // Gauche 
-
+			ballX -= 15;
 			if(ballX<15){ballX=15;}
 				ballX -= 15;
-			break;
-                // Droite 
-
-                    	if(ballX<15){ballX=15;}
-				ballX -= -15;
 			break;
 }
 
