@@ -20,18 +20,20 @@ function principale(){
 	
 }
 
-function bouger(){
-		var ballX = parseInt(document.getElementById('blueball').getAttribute("cx"));
-	//Code à créer pour faire bouger la boule enemy
-		 // Gauche 
-			ballX -= 15;
-			if(ballX<=0){ballX=885;}
-			document.getElementById('blueball').setAttribute("cx", ballX);
+function bouger() {
+    var ballX = parseInt(document.getElementById('blueball').getAttribute("cx"));
+    // Code à créer pour faire bouger la boule enemy
+    // Gauche 
+    ballX -= 15;
+    if (ballX <= 0) {
+        ballX = 885;
+    }
+    if (ballX >= 900) {
+        ballX = 15;
+    }
+    document.getElementById('blueball').setAttribute("cx", ballX);
 }
-			if(ballX <= 0 || ballX >= 900){ // Si la balle atteint le bord gauche ou droit
-        		speed *= -1; // Inverser la direction en changeant la vitesse de déplacement
-}
-ballX += speed;
+
 
 
 function deplacement(evt) {
@@ -80,4 +82,18 @@ function deplacement(evt) {
 	</svg>
 <body>
 </html>
+
+<!--
+function bouger(){
+		var ballX = parseInt(document.getElementById('blueball').getAttribute("cx"));
+	//Code à créer pour faire bouger la boule enemy
+		 // Gauche 
+			ballX -= 15;
+			if(ballX<=0){ballX=885;}
+			document.getElementById('blueball').setAttribute("cx", ballX);
+}
+			if(ballX <= 0 || ballX >= 900){ // Si la balle atteint le bord gauche ou droit
+        		speed *= -1; // Inverser la direction en changeant la vitesse de déplacement
+}
+ballX += speed;
 
