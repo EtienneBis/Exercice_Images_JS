@@ -23,11 +23,13 @@ function controler(){
 
 	
 function afficher(){
-	document.getElementById('image').style.display="Block";
+	if(document.getElementById('Control').checked){
+			document.getElementById('image').style.display="Block";
 }
 
 function cacher(){
-	document.getElementById('image').style.display="None";
+	if(document.getElementById('Control').checked){
+			document.getElementById('image').style.display="None";
 }
 
 </script>
@@ -36,11 +38,11 @@ function cacher(){
 <body>
 <h1>Image(s) à afficher ?</h1>
 
-<p>Image 1<input type="checkbox" id="Contro"></p>
+<p>Image 1<input type="checkbox" id="Control"></p>
 	
-<p>Image 2<input type="checkbox" id="Contro"></p>
+<p>Image 2<input type="checkbox" id="Control"></p>
 	
-<p>Image 3<input type="checkbox" id="Contro"></p>
+<p>Image 3<input type="checkbox" id="Control"></p>
 
 <button onclick="afficher()">Afficher</button>
 <br>
