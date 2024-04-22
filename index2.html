@@ -5,8 +5,11 @@
 
 	
 function afficher(){
-	document.getElementByClassName('image').style.display="Block";
-}
+	if(document.getElementByClassName('Control').checked){
+		document.getElementByClassName('image').style.display="Block";
+	else {document.getElementByClassName('image').style.display="None";
+		
+	}
 
 function cacher(){
 	document.getElementByClassName('image').style.display="None";
@@ -25,8 +28,10 @@ function cacher(){
 <p>Image 3<input type="checkbox" class="Control"></p>
 
 <button onclick="afficher()">Afficher</button>
+<!--
 <br>
 <button onclick="cacher()">Cacher</button>
+-->
 <br>
 <img width="400" height="341" class="image" src="https://etiennebis.alwaysdata.net/Image1.jpg" />
 <br>
