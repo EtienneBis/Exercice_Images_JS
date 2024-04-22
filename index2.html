@@ -1,0 +1,52 @@
+<html>
+	<meta charset="UTF-8"/>
+<head>
+<script>
+
+	
+function afficher(){
+	if(document.getElementByClassName('Control').checked){
+			document.getElementByClassName('image').style.display="Block";
+}
+
+function cacher(){
+	if(document.getElementByClassName('Control').checked){
+			document.getElementByClassName('image').style.display="None";
+}
+
+</script>
+</head>
+	
+<body>
+<h1>Image(s) à afficher ?</h1>
+
+<p>Image 1<input type="checkbox" class="Control"></p>
+	
+<p>Image 2<input type="checkbox" class="Control"></p>
+	
+<p>Image 3<input type="checkbox" class="Control"></p>
+
+<button onclick="afficher()">Afficher</button>
+<br>
+<button onclick="cacher()">Cacher</button>
+<br>
+<img width="400" height="341" class="image" src="https://etiennebis.alwaysdata.net/Image1.jpg" />
+<br>
+<img width="400" height="341" class="image" src="https://etiennebis.alwaysdata.net/Image2.jpg" />
+<br>
+<img width="400" height="341" class="image" src="https://etiennebis.alwaysdata.net/Image3.jpg" />
+
+<!--
+<hr/>
+<button onclick="affichage()">Afficher</button>
+<hr/>
+<p id="DuTexte">Ma phrase de texte</p>
+<button onclick="presenter()">Presenter</button>
+<button onclick="cacher()">Cacher</button>
+<hr/>
+<p>Option<input type="checkbox" id="Control"></p>
+<button onclick="controler()">Check</button>
+-->
+
+</body>
+</html>
