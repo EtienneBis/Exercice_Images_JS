@@ -5,15 +5,15 @@
 
 	
 function afficher(){
-	if(document.getElementById('Control').checked){
-		document.getElementById('image').style.display="Block";
+	if(document.getElementById('Control*').checked){
+		document.getElementById('image*').style.display="Block";
 	}
-	else{document.getElementById('image').style.display="None";}
+	else{document.getElementById('image*').style.display="None";}
 		
 	}
 
 function cacher(){
-	document.getElementById('image').style.display="None";
+	document.getElementById('image*').style.display="None";
 }
 
 </script>
@@ -22,11 +22,11 @@ function cacher(){
 <body>
 <h1>Image(s) à afficher ?</h1>
 
-<p>Image 1<input type="checkbox" id="Control"></p>
+<p>Image 1<input type="checkbox" id="Control1"></p>
 	
-<p>Image 2<input type="checkbox" id="Control"></p>
+<p>Image 2<input type="checkbox" id="Control1"></p>
 	
-<p>Image 3<input type="checkbox" id="Control"></p>
+<p>Image 3<input type="checkbox" id="Control1"></p>
 
 <button onclick="afficher()">Afficher</button>
 <!--
@@ -34,11 +34,11 @@ function cacher(){
 <button onclick="cacher()">Cacher</button>
 -->
 <br>
-<img width="300" height="241" id="image" src="https://etiennebis.alwaysdata.net/Image1.jpg" />
+<img width="300" height="241" id="image1" src="https://etiennebis.alwaysdata.net/Image1.jpg" />
 <br>
-<img width="300" height="241" id="image" src="https://etiennebis.alwaysdata.net/Image2.jpg" />
+<img width="300" height="241" id="image1" src="https://etiennebis.alwaysdata.net/Image2.jpg" />
 <br>
-<img width="300" height="241" id="image" src="https://etiennebis.alwaysdata.net/Image3.jpg" />
+<img width="300" height="241" id="image3" src="https://etiennebis.alwaysdata.net/Image3.jpg" />
 
 <!--
 <hr/>
