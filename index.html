@@ -19,6 +19,10 @@ function controler(){
 	else{alert("Bouton option NON coché");}		
 }
 
+function afficher(){
+	document.getElementById('image').style.display="Block";
+}
+
 
 </script>
 </head>
@@ -32,9 +36,13 @@ function controler(){
 	
 <p>Image 3<input type="checkbox" id="Control"></p>
 
-<button onclick="presenter()">Afficher</button>
+<button onclick="afficher()">Afficher</button>
 
-	
+<img id="image" src="https://etiennebis.alwaysdata.net/Image1.jpg" />
+<img id="image" src="https://etiennebis.alwaysdata.net/Image2.jpg" />
+<img id="image" src="https://etiennebis.alwaysdata.net/Image3.jpg" />
+
+<!--
 <hr/>
 <button onclick="affichage()">Afficher</button>
 <hr/>
@@ -44,7 +52,7 @@ function controler(){
 <hr/>
 <p>Option<input type="checkbox" id="Control"></p>
 <button onclick="controler()">Check</button>
-
+-->
 
 </body>
 </html>
