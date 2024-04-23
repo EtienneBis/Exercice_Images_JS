@@ -20,11 +20,10 @@
 
 
     <script>
-        // Fonction pour basculer la sélection d'un cercle
         function changercouleur(index) {
             // Récupérer l'élément cercle correspondant à l'indice
             var circle = document.getElementById("C" + index);
-            // Vérifier si le cercle est déjà sélectionné
+            // Vérifier si le cercle est deja sélectionné
             if (circle.getAttribute("fill") === "red") {
                 // Si oui, le désélectionner en changeant la couleur de remplissage
                 circle.setAttribute("fill", "gray");
@@ -32,7 +31,7 @@
             else {
                 var selectedCircles = document.querySelectorAll("circle[fill='red']");
                 if (selectedCircles.length < 3) {
-                    // Sinon, le sélectionner en changeant la couleur de remplissage
+                    // Sinon changer la couleur de remplissage
                     circle.setAttribute("fill", "red");
                 } else {
                     alert("pas plus de 3 cercles");
@@ -52,7 +51,6 @@
                 selectedCircle.setAttribute("fill", "blue");
                 alert("Perdu");
             } else {
-                // Colorer le cercle aléatoire en bleu
                 selectedCircle.setAttribute("fill", "blue");
                 alert("gagné");
             }
